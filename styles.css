@@ -1,0 +1,118 @@
+/* 
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
+*/
+
+:root {
+	--color-bg-dark: hsl(0, 0%, 8%);
+	--color-bg-medium: hsl(0, 0%, 12%);
+	--color-bg-light: hsl(0, 0%, 20%);
+	--color-text-light: hsl(0, 0%, 100%);
+	--color-text-dark: hsl(0, 0%, 12%);
+	--color-primary: hsl(75, 94%, 57%);
+}
+
+.inter-regular {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.inter-semibold {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.inter-bold {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.875rem;
+	background: var(--color-bg-dark);
+	color: var(--color-text-light);
+	display: grid;
+	place-items: center;
+	min-height: calc(100vh - 2rem);
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+main {
+	background: var(--color-bg-medium);
+	text-align: center;
+	width: calc(100vw - 6rem);
+	max-width: 20rem;
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+img {
+	border-radius: 50%;
+	height: 100px;
+}
+
+.name {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.location {
+	color: var(--color-primary);
+	margin-top: 1rem;
+}
+
+.description {
+	margin-top: 1.5rem;
+}
+.accounts-list {
+	display: grid;
+	gap: 1rem;
+	margin-top: 1.5rem;
+
+	button {
+		width: 100%;
+		border-radius: 0.5rem;
+		padding: 0.875rem 0;
+		background-color: var(--color-bg-light);
+		color: var(--color-text-light);
+
+		&:hover,
+		&:focus {
+			background-color: var(--color-primary);
+			color: var(--color-text-dark);
+		}
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+
+		&:focus {
+			color: var(--color-primary);
+		}
+	}
+}
