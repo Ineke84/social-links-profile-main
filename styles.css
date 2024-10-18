@@ -64,6 +64,25 @@ main {
 	max-width: 20rem;
 	border-radius: 1rem;
 	padding: 1.5rem;
+
+	a {
+		border-radius: 0.5rem;
+		padding: 0.875rem;
+		background-color: var(--color-bg-light);
+		color: var(--color-text-light);
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			background-color: var(--color-primary);
+			color: var(--color-text-dark);
+		}
+
+		&.back {
+			display: block;
+			margin-top: 15px;
+		}
+	}
 }
 
 img {
@@ -71,8 +90,17 @@ img {
 	height: 100px;
 }
 
-.name {
-	font-size: 1.5rem;
+#linktekst {
+	font-size: 1rem;
+}
+
+.accounts-list {
+	display: grid;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.description {
 	margin-top: 1.5rem;
 }
 
@@ -81,38 +109,22 @@ img {
 	margin-top: 1rem;
 }
 
-.description {
+.name {
+	font-size: 1.5rem;
 	margin-top: 1.5rem;
 }
-.accounts-list {
-	display: grid;
-	gap: 1rem;
-	margin-top: 1.5rem;
 
-	button {
-		width: 100%;
-		border-radius: 0.5rem;
-		padding: 0.875rem 0;
-		background-color: var(--color-bg-light);
-		color: var(--color-text-light);
+footer {
+	.attribution {
+		font-size: 11px;
+		text-align: center;
 
-		&:hover,
-		&:focus {
-			background-color: var(--color-primary);
-			color: var(--color-text-dark);
-		}
-	}
-}
+		a {
+			color: hsl(228, 45%, 44%);
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-
-	a {
-		color: hsl(228, 45%, 44%);
-
-		&:focus {
-			color: var(--color-primary);
+			&:focus {
+				color: var(--color-primary);
+			}
 		}
 	}
 }
