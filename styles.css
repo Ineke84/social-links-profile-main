@@ -114,17 +114,16 @@ img {
 	margin-top: 1.5rem;
 }
 
-footer {
-	.attribution {
-		font-size: 11px;
-		text-align: center;
+footer.attribution {
+	font-size: 11px;
+	text-align: center;
 
-		a {
-			color: hsl(228, 45%, 44%);
+	a {
+		color: var(--color-text-light);
 
-			&:focus {
-				color: var(--color-primary);
-			}
+		&:focus,
+		&:hover {
+			color: var(--color-primary);
 		}
 	}
 }
