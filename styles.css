@@ -90,10 +90,6 @@ img {
 	height: 100px;
 }
 
-#linktekst {
-	font-size: 1rem;
-}
-
 .accounts-list {
 	display: grid;
 	gap: 1rem;
@@ -109,9 +105,10 @@ img {
 	margin-top: 1rem;
 }
 
-.name {
+h1 {
 	font-size: 1.5rem;
 	margin-top: 1.5rem;
+	font-weight: 400;
 }
 
 footer.attribution {
